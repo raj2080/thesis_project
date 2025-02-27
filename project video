@@ -1,0 +1,23 @@
+Please go through this link. I have completed my project.
+
+---------------------------------------------------------------------------------------
+https://youtu.be/c_kICsg6zYA
+----------------------------------------------------------------------------------------
+
+
+
+About my research;
+--------------------
+
+My research focuses on developing a customized clothing recommendation system. It uses a content-based recommendation approach with the ResNet-50 pretrained deep learning model.
+Users can upload images and the system analyzes the images to suggest the five - closest matching clothing items using brute force searcha nd the euclidean metric.
+The goal is to enhace user experience by delivering personalized fashion recommendations, leveraging machine learning model and deep learning model. The project is implemented using tensorflow,python, cuda and cuDNN.
+
+
+How my system works;
+-------------------------------------------------------------------------------------------------------
+I have a dataset of 44,441 apparel images from kaggle. Through the help of ResNet-50, Each image has 2048 extracted unique features, which means I have extracted 91,015,168 features of the entire image dataset. 
+I have used RTX 3050 nvidia graphic card, tensorflow , cuda 11.4.3 version, python 3.7 for feature extraction. It takes me about 1.5 to 2 hours to extract all the features from the entire dataset. I have saved 
+the extracted features of all the images in the embedded.pkl file. When a user gives an image for recommendation my system first extracts it's features then euclidean metric calculates the distance between the feature 
+vectors of the uploaded clothing image and the feature vectors of other existing items. Where brute force search comes into the place, where it checks every possible option to find the best match or solution. It deoesnot 
+use any shortcuts or optimizations, it simply compares each item one by one. By comparing each item, it identifies the five closest matching clothes based on visual similarity.
